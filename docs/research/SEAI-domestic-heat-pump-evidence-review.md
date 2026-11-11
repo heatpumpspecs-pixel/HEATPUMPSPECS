@@ -134,3 +134,8 @@ The holder page and individual subtype pages link directly to certificate PDFs a
 For the five Aerona R290 subtypes, the linked BRE certificates are dated 14 January 2025 and state validity through 13 January 2035. For the four Aerona3 R32 subtypes, the one-page certificates show issue date 1 March 2022 but do not display an expiry date in the retrieved text; current validity must be rechecked in the live database before being asserted.
 
 This is a snapshot of the Grant holder's KEYMARK listings, not a complete Grant product catalogue, not proof that every model is currently sold in Ireland, and not proof of domestic SEAI grant approval.
+
+
+### Current repository coverage after the source review
+
+The five Aerona R290 subtypes in the Grant KEYMARK inventory now each have an archival-first-pass TechSpecs V2 product record: HPR290i40, HPR290i65, HPR290i90, HPR290i120 and HPR290i160. Each record retains model-specific Grant technical data, Grant product-page data, the matching KEYMARK subtype/certificate and the corresponding SEAI Triple E row as separate evidence. No normalized specifications have been published yet. The four Aerona3 R32 entries remain in the KEYMARK source inventory pending manufacturer-source review and product-record extraction.

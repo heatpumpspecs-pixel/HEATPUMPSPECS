@@ -13,7 +13,14 @@ HEATPUMPSPECS is the canonical product-data repository. Product records follow t
 
 ## Product records
 
-- [Grant Aerona HPR290i160](https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main/data/grant/heat-pump/aerona-hpr290i160.json): first archival-first-pass record. No normalized specifications have been published yet; source discrepancies are documented.
+Five Grant Aerona R290 models currently have archival-first-pass V2 records:
+- [Grant Aerona HPR290i40](https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main/data/grant/heat-pump/aerona-hpr290i40.json)
+- [Grant Aerona HPR290i65](https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main/data/grant/heat-pump/aerona-hpr290i65.json)
+- [Grant Aerona HPR290i90](https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main/data/grant/heat-pump/aerona-hpr290i90.json)
+- [Grant Aerona HPR290i120](https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main/data/grant/heat-pump/aerona-hpr290i120.json)
+- [Grant Aerona HPR290i160](https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main/data/grant/heat-pump/aerona-hpr290i160.json)
+
+These are source-preserving archival first passes; no normalized specifications have been published yet. The Grant Aerona3 R32 KEYMARK entries remain indexed but are pending product records.
 
 ## Source inventories
 

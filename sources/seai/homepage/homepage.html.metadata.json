@@ -1,0 +1,34 @@
+{
+  "source_url": "https://www.seai.ie/",
+  "canonical_url": "https://www.seai.ie/",
+  "open_graph_url": "https://www.seai.ie/homepage",
+  "page_title": "Home - Sustainable Energy Authority Of Ireland | SEAI",
+  "publisher": "Sustainable Energy Authority of Ireland",
+  "description": "Here at the SEAI, we’re working with people across Ireland, from homeowners to large industry, to transform how we think about and use energy.",
+  "prepared_on_utc": "2026-11-11",
+  "acquisition_method": "user_supplied_html",
+  "original_filename": "Pasted text.txt",
+  "content_type": "text/html; charset=utf-8 (inferred from document; original HTTP response header not supplied)",
+  "sha256": "01baf98cccde5d194aad5dff989cdf8036385524a5e7d80d8cd1074added7bf5",
+  "archive_path": "sources/seai/homepage/homepage.html",
+  "link_reference_count": 196,
+  "unique_resolved_url_count": 142,
+  "linked_host_reference_counts": {
+    "energylink.seai.ie": 2,
+    "singlepointofcontact.seai.ie": 1,
+    "www.climatetoolkit4business.gov.ie": 1,
+    "www.facebook.com": 2,
+    "www.instagram.com": 2,
+    "www.linkedin.com": 2,
+    "www.seai.ie": 182,
+    "www.tiktok.com": 2,
+    "www.youtube.com": 2
+  },
+  "verification_status": "not_independently_refetched",
+  "notes": [
+    "The HTML source was supplied by the user and archived without re-fetching the live SEAI page.",
+    "The document canonical URL is https://www.seai.ie/.",
+    "The Open Graph URL is https://www.seai.ie/homepage; both source-declared URL values are retained.",
+    "Link counts are calculated from anchor href attributes in the supplied HTML; they are discovery indicators, not a completeness claim for the whole SEAI website."
+  ]
+}

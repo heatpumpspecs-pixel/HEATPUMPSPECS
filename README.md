@@ -46,7 +46,7 @@ The V2 standard is applied as established. Repository structure, record format, 
 
 ## Initial Grant source inventory
 
-The model-level source inventory is [`data/grant/heat-pump/source-inventory.json`](data/grant/heat-pump/source-inventory.json). It indexes all nine Grant Engineering (Ireland) ULC subtypes found in the Heat Pump KEYMARK database, including each subtype URL and certificate PDF URL. Five Aerona R290 models now have archival-first-pass V2 product records; four Aerona3 R32 entries remain source-indexed pending product records. The inventory is a source-discovery index, not the final product catalogue.
+The model-level source inventory is [`data/grant/heat-pump/source-inventory.json`](data/grant/heat-pump/source-inventory.json). It indexes all nine Grant Engineering (Ireland) ULC subtypes found in the Heat Pump KEYMARK database, including each subtype URL and certificate PDF URL. All nine Grant Engineering (Ireland) ULC KEYMARK subtypes now have archival-first-pass V2 product records: five Aerona R290 and four Aerona³ R32. The four R32 certificates are dated 2022 and do not show expiry dates in the retrieved certificate PDFs; current certificate status and product availability remain to be checked. The inventory is a source-discovery index, not the final product catalogue.
 
 ## Current SEAI research
 

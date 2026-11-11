@@ -20,7 +20,7 @@
     "published_at": "2020-05-11",
     "checked_at": "2026-11-11",
     "verification_status": "partially_verified",
-    "verification_notes": "The model-specific Grant product fiche, current Grant product-page row, matching Heat Pump KEYMARK subtype page and certificate were opened and transcribed. The exact model identity and declared test data were checked. The current product page says two models are available but its table lists four; the market status of HPID13R32 and HPID17R32 is unresolved. Product-page and test-data values are retained separately where their conditions/definitions differ."
+    "verification_notes": "The model-specific Grant product fiche, current Grant product-page row, matching Heat Pump KEYMARK subtype page and certificate were opened and transcribed. The exact model identity and declared test data were checked. The current product page says two models are available but its table lists four; the market status of HPID13R32 and HPID17R32 is unresolved. Product-page and test-data values are retained separately where their conditions/definitions differ. Seasonal efficiency values are not identical between the manufacturer fiche and KEYMARK record; the differences are documented in record_notes."
   },
   "extraction": {
     "method": "mixed",
@@ -61,6 +61,7 @@
     "The product page reports SCOP 35°C 5.19; KEYMARK reports SCOP 5.24 low-temperature and 3.53 medium-temperature. These are retained separately and not treated as equivalent.",
     "The KEYMARK certificate PDF shows issue date 1 March 2022 but no expiry date; current validity must be checked in the live database.",
     "The KEYMARK database displays refrigerant mass with a decimal comma; the raw string is preserved without numeric conversion.",
-    "The certificate PDF's lack of a displayed expiry date is not proof of expiry or current validity; recheck the live KEYMARK status."
+    "The certificate PDF's lack of a displayed expiry date is not proof of expiry or current validity; recheck the live KEYMARK status.",
+    "The Grant manufacturer fiche reports seasonal space-heating efficiency ηs of 139% at 55°C and 209% at 35°C; the KEYMARK subtype page reports 138% and 207% respectively. Both source values are preserved; no preferred value is selected."
   ]
 }

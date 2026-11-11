@@ -13,14 +13,19 @@ HEATPUMPSPECS is the canonical product-data repository. Product records follow t
 
 ## Product records
 
-Five Grant Aerona R290 models currently have archival-first-pass V2 records:
+All nine Grant Engineering (Ireland) ULC subtypes in the current KEYMARK source inventory now have archival-first-pass V2 product records: five Aerona R290 models and four Aerona³ R32 models.
+
 - [Grant Aerona HPR290i40](https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main/data/grant/heat-pump/aerona-hpr290i40.json)
 - [Grant Aerona HPR290i65](https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main/data/grant/heat-pump/aerona-hpr290i65.json)
 - [Grant Aerona HPR290i90](https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main/data/grant/heat-pump/aerona-hpr290i90.json)
 - [Grant Aerona HPR290i120](https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main/data/grant/heat-pump/aerona-hpr290i120.json)
 - [Grant Aerona HPR290i160](https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main/data/grant/heat-pump/aerona-hpr290i160.json)
+- [Grant Aerona³ HPID6R32](https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main/data/grant/heat-pump/aerona3-hpid6r32.json)
+- [Grant Aerona³ HPID10R32](https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main/data/grant/heat-pump/aerona3-hpid10r32.json)
+- [Grant Aerona³ HPID13R32](https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main/data/grant/heat-pump/aerona3-hpid13r32.json)
+- [Grant Aerona³ HPID17R32](https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main/data/grant/heat-pump/aerona3-hpid17r32.json)
 
-These are source-preserving archival first passes; no normalized specifications have been published yet. The Grant Aerona3 R32 KEYMARK entries remain indexed but are pending product records.
+These are source-preserving archival first passes; normalized specifications have not yet been populated. The four R32 certificates are dated 1 March 2022 and do not display an expiry date in the retrieved one-page PDFs; current certificate status and current product availability must be checked separately.
 
 ## Source inventories
 

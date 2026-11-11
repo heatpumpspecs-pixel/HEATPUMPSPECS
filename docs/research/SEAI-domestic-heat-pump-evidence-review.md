@@ -139,3 +139,41 @@ This is a snapshot of the Grant holder's KEYMARK listings, not a complete Grant 
 ### Current repository coverage after the source review
 
 All nine subtypes in the Grant Engineering (Ireland) ULC KEYMARK inventory now have archival-first-pass TechSpecs V2 product records: five Aerona R290 models and four Aerona³ R32 models. The R290 records retain model-specific Grant technical data, Grant product-page data, matching KEYMARK subtype/certificate pages and corresponding SEAI Triple E rows as separate evidence. The R32 records retain Grant product fiches, current Grant product-page rows, matching KEYMARK subtype pages and certificates as separate evidence. No normalized specifications have been published yet. The R32 certificates are dated 1 March 2022 and do not display expiry dates in the retrieved one-page PDFs; current certificate status and current market availability remain unconfirmed.
+
+
+## 11. SEAI sitemap discovery review (user-supplied URL-list capture, 11 November 2026)
+
+A user-supplied SEAI sitemap URL-list capture was reviewed as a discovery index. It contains 1,243 SEAI URLs with last-modified, change-frequency and priority columns (1,246 text lines including the column headings and other non-URL lines). Its newest listed page modification date is 11 November 2026. The capture is a URL inventory, not the content of those pages and not evidence that a page's information is current or authoritative beyond its own publication.
+
+The following distinct SEAI routes were identified in the capture and checked against the corresponding live SEAI pages:
+
+| Route | Sitemap URL | Evidence role / limitation |
+|---|---|---|
+| Domestic heat-pump system grant | https://www.seai.ie/grants/home-energy-grants/individual-grants/heat-pump-systems | Programme eligibility, homeowner process, technical assessment and grant administration. It is not a product certification register. |
+| HARP | https://www.seai.ie/plan-your-energy-journey/for-your-business/energy-efficient-products/harp-database | Domestic heating-appliance efficiency data for BER assessors using DEAP. SEAI says submissions include product test data and product identification documentation. HARP inclusion and domestic grant eligibility are separate questions. |
+| Triple E | https://www.seai.ie/plan-your-energy-journey/for-your-business/energy-efficient-products/triple-e-register-for-products | Energy-efficiency product register, including technology criteria and the ACA context. It is not HARP and must not be treated as domestic heat-pump grant approval. |
+| DEAP heat-pump guidance | https://www.seai.ie/ber/support-for-ber-assessors/deap/domestic-support/heat-pumps | Assessment methodology and evidence requirements for heat-pump inputs in domestic BER calculations. |
+| DEAP guidance hub | https://www.seai.ie/ber/support-for-ber-assessors/deap | Current methodology navigation. SEAI states that in May 2026 the DEAP Manual, Survey Guide and Guidance were consolidated into the online DEAP Guidance Portal, which is now the primary source; older documents are superseded. |
+| Homeowner heat-pump guidance | https://www.seai.ie/plan-your-energy-journey/for-your-home/guide-to-upgrades/heat-pumps | Consumer-facing explanation and readiness/installation guidance; contextual rather than model-level product evidence. |
+| Renewable energy installer register | https://www.seai.ie/contractors-and-suppliers/register-with-seai/renewable-energy-installer | Installer qualification and registration route. Installer status is not product certification. |
+| Better Energy Homes contractor registration | https://www.seai.ie/contractors-and-suppliers/register-with-seai/contractor | Separate contractor registration route for grant-supported home works; renewable installers must first register as renewable energy installers. |
+
+### Confirmed distinctions from the live SEAI pages
+
+- SEAI describes HARP as a product-efficiency database for home-heating appliances used by domestic BER assessors in DEAP. Product submissions include test data and product-identification documentation. [HARP](https://www.seai.ie/plan-your-energy-journey/for-your-business/energy-efficient-products/harp-database)
+- SEAI describes Triple E as a register of energy-efficient products, with technology-specific criteria and an ACA connection. Its category/criteria page includes heat pumps under Refrigeration and Cooling. [Triple E](https://www.seai.ie/plan-your-energy-journey/for-your-business/energy-efficient-products/triple-e-register-for-products) · [Categories and criteria](https://www.seai.ie/plan-your-energy-journey/for-your-business/energy-efficient-products/triple-e-register-for-products/categories-and-criteria)
+- SEAI's domestic heat-pump grant page describes dwelling/applicant eligibility, technical assessment and grant process requirements. These are programme rules, not proof of a particular model's performance or certification. [Heat pump system grant](https://www.seai.ie/grants/home-energy-grants/individual-grants/heat-pump-systems)
+- SEAI's DEAP heat-pump page describes the assessment methodology, relevant test standards and designer/installer sign-off evidence. The current DEAP hub warns that older guidance documents have been superseded by the online portal. [Heat pumps in DEAP](https://www.seai.ie/ber/support-for-ber-assessors/deap/domestic-support/heat-pumps) · [DEAP hub](https://www.seai.ie/ber/support-for-ber-assessors/deap)
+- SEAI's renewable installer page requires evidence of accredited training for heat-pump installation, while the Better Energy Homes contractor route is separate. [Renewable energy installers](https://www.seai.ie/contractors-and-suppliers/register-with-seai/renewable-energy-installer) · [Contractor registration](https://www.seai.ie/contractors-and-suppliers/register-with-seai/contractor)
+
+### Collection and interpretation rules
+
+1. Use the sitemap to discover and monitor SEAI source pages; do not scrape every listed URL indiscriminately.
+2. Preserve the sitemap's last-modified value as a discovery signal only. It is not a verified publication date, technical revision date or guarantee that linked attachments changed.
+3. Retrieve and preserve the underlying primary document or page separately before extracting requirements.
+4. Record the institutional function of each source: grant programme, product-efficiency database, BER calculation methodology, installer register or consumer guidance.
+5. Do not collapse HARP, Triple E, DEAP, the domestic grant programme, KEYMARK and installer registration into one generic “SEAI approved” status.
+6. For DEAP methodology, follow the current online DEAP Guidance Portal and check legacy heat-pump pages and linked PDFs against it before treating them as current.
+7. Keep this source map in the research layer. It does not alter the TechSpecs V2 product schema or make SEAI an endorser of HEATPUMPSPECS.
+
+**Source-review status:** sitemap-derived URLs were checked against live SEAI pages on 11 November 2026. This is a discovery and classification pass; it is not a full audit of every URL in the sitemap. The sitemap text itself has not been added as a byte-for-byte source snapshot in this commit.

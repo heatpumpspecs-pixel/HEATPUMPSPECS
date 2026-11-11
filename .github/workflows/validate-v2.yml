@@ -9,6 +9,9 @@ on:
       - "schemas/**"
       - "scripts/**"
       - "requirements.txt"
+      - "README.md"
+      - "docs/**"
+      - "llms.txt"
       - ".github/workflows/validate-v2.yml"
   pull_request:
     paths:
@@ -39,3 +42,7 @@ jobs:
         run: python scripts/validate_product_records.py
       - name: Audit source archive integrity
         run: python scripts/audit_source_archives.py
+      - name: Rebuild machine-readable catalogue
+        run: python scripts/build_catalogue_index.py
+      - name: Ensure committed catalogue is current
+        run: git diff --exit-code -- data/catalogue.json

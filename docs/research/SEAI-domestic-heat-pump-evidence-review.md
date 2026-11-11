@@ -120,3 +120,17 @@ The filtered Triple E listing contains Grant Aerona HPR290i160 as Triple E code 
 - SEAI energy-efficient-products and Triple E pages: opened; the distinction between Triple E and HARP reviewed; HPR290i160 listing row identified.
 - Heat Pump KEYMARK scheme and recognition pages: opened and reviewed.
 - The source links are live web references; this note does not claim that the corresponding PDF or workbook files have been archived byte-for-byte in this repository.
+
+
+## 10. Heat Pump KEYMARK searchable database — Grant Engineering (Ireland) ULC
+
+The Heat Pump KEYMARK certified-products page embeds the searchable database at https://www.heatpumpkeymark.com/?type=109126. At the time of review, the database displayed **13,086 models and 3,244 subtypes** across certificate holders. The Grant Engineering (Ireland) ULC holder page listed nine subtypes, each with one model:
+
+- Aerona R290: HPR290i40, HPR290i65, HPR290i90, HPR290i120 and HPR290i160.
+- Aerona3 R32: HPID6R32, HPID10R32, HPID13R32 and HPID17R32.
+
+The holder page and individual subtype pages link directly to certificate PDFs and offer per-subtype model CSV export. The holder page also offers a ZIP download of reports for all subtypes. The live database is searchable; the repository now retains a URL-based source inventory at `data/grant/heat-pump/source-inventory.json`, following the V2 source-inventory pattern. It records the nine subtype-page URLs and nine certificate-PDF URLs without duplicating the PDFs.
+
+For the five Aerona R290 subtypes, the linked BRE certificates are dated 14 January 2025 and state validity through 13 January 2035. For the four Aerona3 R32 subtypes, the one-page certificates show issue date 1 March 2022 but do not display an expiry date in the retrieved text; current validity must be rechecked in the live database before being asserted.
+
+This is a snapshot of the Grant holder's KEYMARK listings, not a complete Grant product catalogue, not proof that every model is currently sold in Ireland, and not proof of domestic SEAI grant approval.

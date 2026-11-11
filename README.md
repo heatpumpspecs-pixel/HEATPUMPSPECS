@@ -2,7 +2,9 @@
 
 An evidence-based, machine-readable technical specifications database for domestic heat pumps, focused on the Irish and EU markets.
 
-This repository is the canonical working store for HEATPUMPSPECS. It is a data and evidence repository, not the consumer-facing website.
+This repository is the canonical working store for HEATPUMPSPECS: the background, evidence-led data layer of the wider TechSpecs project. Its purpose is to make reliable, traceable heat-pump technical information readily available to SEAI, technical professionals, researchers and machine/AI retrieval systems. It is not the consumer-facing commercial website.
+
+The separate planned website, [www.heatpumpspecs.ie](https://www.heatpumpspecs.ie), is intended for consumer information, lead generation and affiliate activity. It may use and explain repository data, but commercial activity must not influence the technical records. See [the two-layer project architecture](docs/project-architecture.md).
 
 ## Governing data standard
 

@@ -44,6 +44,10 @@ The V2 standard is applied as established. Repository structure, record format, 
 - Never invent missing specifications, model numbers, source dates or test conditions.
 - Structural validation and factual verification are separate gates.
 
+## Current SEAI research
+
+The first SEAI evidence review is recorded in [docs/research/SEAI-domestic-heat-pump-evidence-review.md](docs/research/SEAI-domestic-heat-pump-evidence-review.md). It identifies the current DTSS v4.0 (July 2026), HARP/DEAP evidence routes and the distinction between SEAI grant eligibility and voluntary Heat Pump KEYMARK certification. This is a source review, not a product record.
+
 ## Source archive currently committed
 
 The SEAI homepage supplied as the project's first source is retained at:

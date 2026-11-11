@@ -1,0 +1,330 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://techspecs.dev/schemas/product-record-v2.schema.json",
+  "title": "TechSpecs Product Record v2",
+  "description": "Canonical archival-first product record. Original source sections are retained; normalized specifications are optional until extracted and verified. Historical product records are supported; introduction-year validation starts at 2001 to accommodate Apple iPod-era devices.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "product",
+    "source",
+    "extraction",
+    "sections"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "2.0"
+    },
+    "product": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "brand",
+        "category",
+        "family",
+        "model",
+        "model_slug"
+      ],
+      "properties": {
+        "brand": {
+          "type": "string",
+          "minLength": 1
+        },
+        "category": {
+          "type": "string",
+          "minLength": 1
+        },
+        "family": {
+          "type": "string",
+          "minLength": 1
+        },
+        "model": {
+          "type": "string",
+          "minLength": 1
+        },
+        "model_slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "model_year": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 2001,
+          "maximum": 2100
+        },
+        "year_introduced": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 2001,
+          "maximum": 2100
+        },
+        "variant": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "model_numbers": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "finishes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "storage_options": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_type",
+        "source_url",
+        "verification_status",
+        "checked_at"
+      ],
+      "properties": {
+        "source_type": {
+          "type": "string",
+          "enum": [
+            "manufacturer",
+            "regulatory",
+            "retailer",
+            "user_supplied_document",
+            "third_party_reference",
+            "other"
+          ]
+        },
+        "source_url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        },
+        "source_file": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "publisher": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "published_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "checked_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "verification_status": {
+          "type": "string",
+          "enum": [
+            "not_checked",
+            "url_checked",
+            "content_verified",
+            "partially_verified",
+            "conflicting_sources",
+            "unavailable"
+          ]
+        },
+        "verification_notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "extraction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "method",
+        "normalization_status",
+        "note"
+      ],
+      "properties": {
+        "method": {
+          "type": "string",
+          "enum": [
+            "manual",
+            "section_preserving",
+            "structured_extraction",
+            "transcribed",
+            "mixed"
+          ]
+        },
+        "normalization_status": {
+          "type": "string",
+          "enum": [
+            "archival_first_pass",
+            "partially_normalized",
+            "normalized",
+            "not_applicable"
+          ]
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        },
+        "extracted_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "reviewed_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        }
+      }
+    },
+    "sections": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "heading",
+          "source_text"
+        ],
+        "properties": {
+          "heading": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_text": {
+            "type": "string"
+          },
+          "source_url": {
+            "type": "string",
+            "format": "uri",
+            "description": "Optional per-section source URL when a record preserves evidence from more than one source."
+          },
+          "source_file": {
+            "type": "string",
+            "description": "Optional repository-relative archived source path for this section."
+          }
+        }
+      }
+    },
+    "normalized_specifications": {
+      "type": "object",
+      "description": "Optional field-level data. Use consistent field names and SI/standard units; never populate by guessing.",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": {
+          "$ref": "#/$defs/specificationValue"
+        }
+      }
+    },
+    "record_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "$defs": {
+    "specificationValue": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "unit",
+        "source_section",
+        "verification_status"
+      ],
+      "properties": {
+        "value": {
+          "type": [
+            "string",
+            "number",
+            "integer",
+            "boolean",
+            "array",
+            "null"
+          ]
+        },
+        "unit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_section": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "verification_status": {
+          "type": "string",
+          "enum": [
+            "not_checked",
+            "source_transcribed",
+            "content_verified",
+            "partially_verified",
+            "not_applicable"
+          ]
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

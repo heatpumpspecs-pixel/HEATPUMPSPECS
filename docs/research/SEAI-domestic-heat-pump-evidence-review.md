@@ -177,3 +177,61 @@ The following distinct SEAI routes were identified in the capture and checked ag
 7. Keep this source map in the research layer. It does not alter the TechSpecs V2 product schema or make SEAI an endorser of HEATPUMPSPECS.
 
 **Source-review status:** sitemap-derived URLs were checked against live SEAI pages on 11 November 2026. This is a discovery and classification pass; it is not a full audit of every URL in the sitemap. The sitemap text itself has not been added as a byte-for-byte source snapshot in this commit.
+
+
+## 12. Current SEAI website review — operational status and page-level distinctions (11 November 2026)
+
+This section records a further review of the current live SEAI pages. It is a website-information review, not a product-data extraction exercise.
+
+### HARP: current status is explicitly historical/static
+
+The current SEAI HARP page now states that HARP's use and future are under review and that SEAI will not expand the database in its current format. Existing information is to remain available as a static historical database for domestic BER assessors. SEAI also states that where an appliance is not listed, manufacturers may provide certified accredited test data to BER assessors, and that heat-pump manufacturers' Ecodesign data can be used in a BER assessment.
+
+Primary source: https://www.seai.ie/ber/support-for-ber-assessors/harp-database
+
+**Interpretation:** do not describe HARP as a live, expanding or complete current-market register. Preserve it as a historical reference source for BER/DEAP data. The SEAI statement that Ecodesign data can be used is an important route for evidence outside HARP; it does not mean any arbitrary manufacturer claim is sufficient.
+
+### DEAP: online portal is the current methodology source
+
+The SEAI DEAP hub states that the DEAP Manual, DEAP Survey Guide and DEAP Guidance Document were consolidated in May 2026 into the online DEAP Guidance Portal. The portal is the primary source and must be followed for domestic BER assessments; older guidance documents have been superseded.
+
+The portal identifies DEAP Guide version 4.3.1 as applicable to BERs for new and existing dwellings from 24 May 2026.
+
+Primary sources:
+- https://www.seai.ie/ber/support-for-ber-assessors/deap
+- https://deapguide.seai.ie/
+
+**Collection rule:** where an older SEAI page or PDF remains accessible, do not assume it is current solely because it remains online or appears in the sitemap. Check it against the current portal and retain its historical status if superseded.
+
+### Domestic heat-pump grant page: current published process and internal wording to preserve
+
+The current SEAI Heat Pump System Grant page states:
+- Eligible property types include owner-occupiers, companies (including owner management companies), registered charities, holiday homes, approved housing bodies, and private/commercial landlords of tenanted properties.
+- The home must have an MPRN and must have been built and occupied before 2021.
+- For homes built before 2007, a technical assessment is required where there is no valid BER or where the BER indicates a high heat loss; the page identifies a Heat Loss Indicator of 2.3 W/(K.m²) or less as the threshold where a technical assessment is not needed.
+- For homes built from 2007 onwards, a technical assessment is not required, although one may be chosen.
+- The page describes a grant bundle with a heat-pump unit component, a central-heating component where required, and a boiler-scrappage component where eligible. Its grant-value section also presents maximum totals by dwelling type and technology.
+- Grant approval must be obtained before works start. The page describes an eight-month period from the grant offer to drawdown, a post-works BER, and submission of the Declaration of Works, Designer Installer/Heating Design Sheet and Ecodesign data sheet.
+
+Primary source: https://www.seai.ie/grants/home-energy-grants/individual-grants/heat-pump-systems
+
+**Page wording note:** the page contains more than one presentation of grant values: a component-level explanation and a table of maximum amounts by dwelling type/technology. When recording grant values, capture the applicable table, date checked, technology and dwelling type rather than flattening these into one undifferentiated figure. The page is dynamic and should be rechecked before quoting amounts as current.
+
+### Installer registration and Better Energy Homes contractor registration are separate
+
+The current Renewable Energy Installers page says applicants must provide evidence of certification from an accredited training provider for the relevant renewable technology, including heat pumps. The current contractor registration page separately states that a business offering renewable-system measures must first register as a renewable energy installer; the Better Energy Homes contractor registration is a further, distinct route. SEAI's contractor registration guidance says both registrations are required to carry out renewable-system measures under the Better Energy Homes scheme.
+
+Primary sources:
+- https://www.seai.ie/contractors-and-suppliers/register-with-seai/renewable-energy-installer
+- https://www.seai.ie/contractors-and-suppliers/register-with-seai/contractor
+- https://www.seai.ie/contractors-and-suppliers/register-with-seai/contractor/register
+
+**Interpretation:** the two registers describe different functions and obligations. Neither is a product certification database. Do not compress them into a single generic installer approval label.
+
+### Sitemap scope: classify before reviewing individual pages
+
+The supplied sitemap capture contains 1,243 SEAI URLs (1,246 text lines including headings/non-URL lines). It includes mixed content types, including author profiles, older blog posts, current programme pages, technical guidance, registers, publications and other SEAI subject areas. The URL count is therefore not a count of 1,243 technical standards or documents.
+
+The next website-research pass should classify the URL inventory by page function and relevance, then review priority source families and linked documents. Sitemap last-modified values are discovery metadata only; they are not proof of the technical revision date or current validity of a page or attachment.
+
+**Review status:** HARP, DEAP hub/portal, domestic heat-pump grant, renewable installer and contractor registration pages were checked against the live SEAI website on 11 November 2026. This section records what those pages state; it does not imply SEAI endorsement of HEATPUMPSPECS.

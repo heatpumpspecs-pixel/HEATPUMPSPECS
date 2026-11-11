@@ -100,11 +100,23 @@ For product-level records, the evidence path should be:
 
 No product specifications have been inferred or created by this research note.
 
+## 9. Separate SEAI Triple E product register
+
+SEAI's general energy-efficient-products page explicitly distinguishes the Triple E Register from HARP: Triple E is a searchable register of energy-efficient products; HARP is the product-efficiency database for home-heating appliances.
+
+Primary sources:
+- https://www.seai.ie/plan-your-energy-journey/for-your-business/energy-efficient-products
+- https://www.seai.ie/plan-your-energy-journey/for-your-business/energy-efficient-products/triple-e-register-for-products
+- Filtered heat-pump listing: https://triplee.seai.ie/acaproducts/ProductDetails.aspx?search=1&tech=52
+
+The filtered Triple E listing contains Grant Aerona HPR290i160 as Triple E code HPU117632, product code HPR290i160, valid from 09/04/2025, with displayed CoP 4.72. The listing row does not state the test point or conditions for that CoP. SEAI states that Triple E products meet minimum energy-efficiency criteria and that businesses selecting listed equipment may use the Accelerated Capital Allowance (ACA) tax incentive. This is separate from HARP and must not be represented as domestic SEAI heat-pump grant approval.
+
 ## Source review status
 
 - SEAI DTSS v4.0: opened and reviewed at the cited URL; relevant clauses identified.
 - SEAI HARP page: opened and reviewed.
 - SEAI DEAP Guide heat-pump non-default-data page: search result reviewed; dynamic page text was not fully exposed in the page-open response.
 - SEAI contractor-support page: opened; manufacturer data-source table reviewed.
+- SEAI energy-efficient-products and Triple E pages: opened; the distinction between Triple E and HARP reviewed; HPR290i160 listing row identified.
 - Heat Pump KEYMARK scheme and recognition pages: opened and reviewed.
 - The source links are live web references; this note does not claim that the corresponding PDF or workbook files have been archived byte-for-byte in this repository.

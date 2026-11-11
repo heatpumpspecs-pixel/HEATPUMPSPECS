@@ -1,0 +1,79 @@
+{
+  "schema_version": "2.0",
+  "product": {
+    "brand": "Grant",
+    "category": "heat-pump",
+    "family": "Aerona R290",
+    "model": "Grant Aerona HPR290i160",
+    "model_slug": "aerona-hpr290i160",
+    "variant": "16 kW R290 outdoor air-to-water heat pump",
+    "model_numbers": [
+      "HPR290i160"
+    ]
+  },
+  "source": {
+    "source_type": "manufacturer",
+    "source_url": "https://grant.ie/media/bkijqoid/grant-aerona-hpr290i160-technical-data.pdf",
+    "source_file": "sources/grant/heat-pump/aerona-r290/aerona-hpr290i160-source.md",
+    "source_title": "Technical Data Sheet Concerning the Commission Delegated Regulations (EU) No 811/2013 and (EU) No 813/2013 — Aerona HPR290i160",
+    "publisher": "Grant Engineering (Ireland) ULC",
+    "published_at": null,
+    "checked_at": "2026-11-11",
+    "verification_status": "partially_verified",
+    "verification_notes": "The official model-specific Grant technical datasheet, current Grant product page, Grant family technical datasheet, matching Heat Pump KEYMARK subtype page and certificate were opened and transcribed. Product identity, registration number and model-specific Ecodesign values were checked across sources. Manufacturer publications disagree on some SCOP, depth and weight values/definitions; these have been preserved separately and no normalized specifications have been created."
+  },
+  "extraction": {
+    "method": "mixed",
+    "normalization_status": "archival_first_pass",
+    "note": "First-pass V2 archival record. Manufacturer and Heat Pump KEYMARK source sections are preserved in Markdown and linked individually below. No normalized specifications have been added; this avoids prematurely defining category-wide field names and preserves unresolved differences between manufacturer publications.",
+    "extracted_at": "2026-11-11",
+    "reviewed_at": "2026-11-11"
+  },
+  "sections": [
+    {
+      "heading": "Grant manufacturer technical data sheet — product identification and medium-temperature (55°C) data",
+      "source_text": "Model, outdoor unit: Aerona HPR290i160. Indoor unit: None. Air-to-water heat pump: Yes. Brine-to-water heat pump: No. Low-temperature heat pump: No. Equipped with supplementary heater: Yes. Heat pump combination heater: No. Parameters: Medium Temperature Applications (55°C), Average Climate Conditions. Space heating test standard: EN 14825. DHW test standard: EN 16147. Rated heat output Prated: 14.01 kW. Seasonal space heating energy efficiency ηs: 133%. At Tj = -7°C: Pdh 12.40 kW, COPd 1.82, Cdh 0.90. At +2°C: Pdh 7.71 kW, COPd 3.39, Cdh 0.90. At +7°C: Pdh 5.19 kW, COPd 4.73, Cdh 0.90. At +12°C: Pdh 4.63 kW, COPd 6.56, Cdh 0.90. Tbiv -7°C; TOL -10°C; WTOL 60°C. Supplementary heater Psup 2.040 kW, electrical. Capacity control: Variable. Rated outdoor airflow: 4050 m³/h. Sound power indoors/outdoors: - / 53 dBA. Annual energy consumption QHE: 8505 kWh.",
+      "source_url": "https://grant.ie/media/bkijqoid/grant-aerona-hpr290i160-technical-data.pdf",
+      "source_file": "sources/grant/heat-pump/aerona-r290/aerona-hpr290i160-source.md"
+    },
+    {
+      "heading": "Grant manufacturer technical data sheet — low-temperature (35°C) data",
+      "source_text": "Parameters: Low Temperature Applications (35°C), Average Climate Conditions. Rated heat output Prated: 14.8 kW. Seasonal space heating energy efficiency ηs: 182%. At Tj = -7°C: Pdh 13.09 kW, COPd 2.67, Cdh 0.90. At +2°C: Pdh 8.79 kW, COPd 4.72, Cdh 0.90. At +7°C: Pdh 5.79 kW, COPd 6.21, Cdh 0.90. At +12°C: Pdh 4.22 kW, COPd 7.82, Cdh 0.90. Tbiv -7°C; TOL -10°C; WTOL 60°C. Supplementary heater Psup 1.860 kW, electrical. Capacity control: Variable. Rated outdoor airflow: 4050 m³/h. Sound power indoors/outdoors: - / 53 dBA. Annual energy consumption QHE: 6605 kWh.",
+      "source_url": "https://grant.ie/media/bkijqoid/grant-aerona-hpr290i160-technical-data.pdf",
+      "source_file": "sources/grant/heat-pump/aerona-r290/aerona-hpr290i160-source.md"
+    },
+    {
+      "heading": "Grant manufacturer product page — HPR290i160 specification row",
+      "source_text": "Product code HPR290i160; model Grant Aerona 16kW R290 Inverter Driven Air Source Heat Pump; ErP rating A+++; weight 182/210 kg; height 1365 mm; width 1155 mm; depth 419 mm; SCOP 35°C 4.59; capacity 16.16 kW; power input 3.43 kW; maximum running current 42.3 A; refrigerant R290; operating voltage 230 V; flow/return tappings 1” BSPF; minimum/maximum operating air temperature -25/43°C; sound power 53 dB(A); sound pressure level at neighbouring assessment position 41.9 dB(A).",
+      "source_url": "https://grant.ie/professional/products/air-source-heat-pump/grant-aerona-r290-air-source-heat-pump/",
+      "source_file": "sources/grant/heat-pump/aerona-r290/aerona-hpr290i160-source.md"
+    },
+    {
+      "heading": "Grant Aerona R290 family technical data sheet — HPR290i160 column",
+      "source_text": "At air 7°C / water 35°C, BS EN 14511: heating capacity 16.16 kW; COP 4.72. At air -5°C / water 55°C, BS EN 14511: heating capacity 15.57 kW; COP 1.90. Average-climate SCOP: 4.50 at 35°C and 3.29 at 55°C. Minimum modulation 4.63 kW. Rated airflow 4050 m³/h. Total fan input 200 W. Refrigerant R290, GWP 3, charge 1.65 kg. Circulating pump 9 m head. Water connection 1” BSPF. Maximum water pressure 3 bar; maximum water temperature 75°C. Operating range: space heating -25 to 35°C; DHW -25 to 43°C. Water flow 10 to 50 litres/min. Operating flow temperature: space heating 25 to 75°C; DHW 20 to 70°C. Sound power 52.90 dB (BS EN 12102-1); sound pressure 44.91 dB at 1 m and 35.37 dB at 3 m (Q=2). QuietMark: Yes. Height 1365 mm, width 1155 mm, depth 425 mm. Weight empty 180 kg, full 184 kg. Water content 4.0 litres. Energy monitoring: Yes.",
+      "source_url": "https://grant.ie/media/2414/irlpdoc0023_rev0000_r290-data-sheet_a4-1.pdf",
+      "source_file": "sources/grant/heat-pump/aerona-r290/aerona-hpr290i160-source.md"
+    },
+    {
+      "heading": "Heat Pump KEYMARK database — subtype and model data",
+      "source_text": "Certificate holder Grant Engineering (Ireland) ULC; registration number 041-K005-09; certification body BRE; subtype Grant Aerona HPR290i160; driving energy electricity; heat pump type Outdoor Air/Water; refrigerant R290; mass of refrigerant 1,650 kg (as displayed); certification date 14.01.2025; testing basis Heat Pump KEYMARK Scheme Rules Rev 15; testing laboratory TÜV SÜD Certification and Testing Co., Ltd. Guangzhou Branch, CN. Model application Heating + DHW + low temp; units Outdoor; reversibility No; power supply 1x230V 50Hz. EN 14511-2: low/medium temperature heat output 16.16/16.34 kW, electrical input 3.43/5.69 kW, COP 4.72/2.87. EN 12102-1 average-climate outdoor sound power 53 dB(A) at both low and medium temperature. EN 14825 average climate: low/medium temperature ηs 182%/133%, Prated 14.8/14.0 kW, SCOP 4.63/3.4, Tbiv -7°C/-7°C, TOL -10°C/-10°C. EN 16147 average-climate DHW: load profile L, ηDHW 118.2%, COP 2.74, heating-up time 01:39 h:min, standby power 58 W, reference hot-water temperature 55.7°C, mixed water at 40°C 333 litres. The database displays refrigerant mass as “1,650 kg”; punctuation retained as displayed.",
+      "source_url": "https://www.heatpumpkeymark.com/en/?cHash=13647e61956ffbc63174683e75ca36e4&tx_pskeymark_frontend%5Baction%5D=showSubtype&tx_pskeymark_frontend%5Bcontroller%5D=Frontend&tx_pskeymark_frontend%5Bsubtype%5D=6087&type=109126",
+      "source_file": "sources/keymark/heat-pump/aerona-r290/aerona-hpr290i160-source.md"
+    },
+    {
+      "heading": "Heat Pump KEYMARK certificate — conformity assessment",
+      "source_text": "Certificate holder Grant Engineering Ireland ULC, Crinkle, Birr, Co. Offaly, R42 D788. Manufacturing site Guangzhou, P.R. China. Product Heat Pumps; product type Outdoor Air to Water Heat Pump; sub-type and models Aerona HPR290i160. Testing basis EN 14511:2022, EN 14825:2022, EN 16147:2017+A1:2022, EN 12102-1:2022 and KEYMARK Certification Scheme for Heat Pumps (2024). Registration number 041-K005-09. Date of issue 14 January 2025. Date of expiry 13 January 2035. The certificate states that it is maintained and held in force through periodic review and verification and directs users to the Heat Pump KEYMARK database for detailed information.",
+      "source_url": "https://www.heatpumpkeymark.com/uploads/tx_ehpakeymark/Cert_041-K005-09.pdf",
+      "source_file": "sources/keymark/heat-pump/aerona-r290/aerona-hpr290i160-source.md"
+    }
+  ],
+  "record_notes": [
+    "This is an archival-first-pass record. No normalized_specifications have been populated; category-wide heat-pump field names and unit conventions should be agreed through the V2 collection process before normalization.",
+    "The model-specific Grant technical datasheet and the matching KEYMARK record agree on low- and medium-temperature rated heat output and seasonal space-heating energy efficiency, subject to rounding.",
+    "The current Grant product page reports 419 mm depth, while the Grant family technical-data sheet reports 425 mm for HPR290i160.",
+    "The current Grant product page reports weight 182/210 kg; the family technical-data sheet reports empty/full weight 180/184 kg. These labels are not equivalent definitions and must not be reconciled by assumption.",
+    "SCOP values differ across the current Grant product page (4.59 at 35°C), Grant family technical-data sheet (4.50 at 35°C and 3.29 at 55°C) and KEYMARK subtype record (4.63 low temperature and 3.4 medium temperature). Do not normalize these as interchangeable values.",
+    "The KEYMARK database displays refrigerant mass as “1,650 kg”; the Grant family technical-data sheet states 1.65 kg. The displayed KEYMARK punctuation is preserved and not independently interpreted.",
+    "The manufacturer datasheet marks “Heat Pump Combination Heater: No” while also listing DHW data on the medium-temperature page. The KEYMARK record lists Heating + DHW + low temp. These statements are preserved separately; their exact system/configuration relationship is not inferred."
+  ]
+}

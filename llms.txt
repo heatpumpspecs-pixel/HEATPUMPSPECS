@@ -1,0 +1,33 @@
+# HEATPUMPSPECS
+
+> Evidence-based, machine-readable technical specifications for domestic heat pumps, focused on the Irish and EU markets.
+
+HEATPUMPSPECS is the canonical product-data repository. Product records follow the TechSpecs Canonical Data Standard v2.0. Original source evidence, source URLs, model applicability and verification status are retained.
+
+## Primary machine-readable resources
+
+- [Product catalogue](https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main/data/catalogue.json): index of all V2 product records.
+- [V2 JSON Schema](https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main/schemas/product-record-v2.schema.json): canonical product-record schema.
+- [V2 data standard](https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main/docs/canonical-data-standard-v2.md): extraction, provenance, normalization and validation rules.
+- [Repository README](https://github.com/heatpumpspecs-pixel/HEATPUMPSPECS): repository purpose and layout.
+
+## Product records
+
+- [Grant Aerona HPR290i160](https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main/data/grant/heat-pump/aerona-hpr290i160.json): first archival-first-pass record. No normalized specifications have been published yet; source discrepancies are documented.
+
+## Evidence
+
+- [Grant manufacturer source transcription](https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main/sources/grant/heat-pump/aerona-r290/aerona-hpr290i160-source.md)
+- [Heat Pump KEYMARK source transcription](https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main/sources/keymark/heat-pump/aerona-r290/aerona-hpr290i160-source.md)
+- [SEAI domestic heat-pump evidence review](https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main/docs/research/SEAI-domestic-heat-pump-evidence-review.md)
+
+## Interpretation rules
+
+- Prefer exact model/variant matches over family-level claims.
+- Preserve manufacturer, regulatory and third-party evidence separately.
+- Do not infer a product specification from another model in the same family.
+- Treat differing test standards, climate zones, flow temperatures and definitions as distinct data.
+- A KEYMARK certificate is not to be represented as an SEAI grant approval.
+- Structural validation does not establish factual accuracy.
+
+The catalogue currently uses the public GitHub raw-content endpoint. A custom publishing host can be configured later without changing product records.

@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "product": {
+    "brand": "Grant",
+    "category": "heat-pump",
+    "family": "Aerona³ R32",
+    "model": "Grant Aerona³ HPID17R32",
+    "model_slug": "aerona3-hpid17r32",
+    "variant": "17 kW R32 outdoor air-to-water heat pump",
+    "model_numbers": [
+      "HPID17R32"
+    ]
+  },
+  "source": {
+    "source_type": "manufacturer",
+    "source_url": "https://grant.ie/media/1744/grant-aerona-17kw-hp-fiche-v15-signed.pdf",
+    "source_file": "sources/grant/heat-pump/aerona3-r32/aerona3-hpid17r32-source.md",
+    "source_title": "Product fiche concerning the Commission Delegated Regulations (EU) No 811/2013 and (EU) No 813/2013 — Grant Aerona³ HPID17R32",
+    "publisher": "Grant Engineering (Ireland) ULC",
+    "published_at": "2020-05-11",
+    "checked_at": "2026-11-11",
+    "verification_status": "partially_verified",
+    "verification_notes": "The model-specific Grant product fiche, current Grant product-page row, matching Heat Pump KEYMARK subtype page and certificate were opened and transcribed. The exact model identity and declared test data were checked. The current product page says two models are available but its table lists four; the market status of HPID13R32 and HPID17R32 is unresolved. Product-page and test-data values are retained separately where their conditions/definitions differ."
+  },
+  "extraction": {
+    "method": "mixed",
+    "normalization_status": "archival_first_pass",
+    "note": "Archival-first-pass V2 record. Manufacturer and KEYMARK evidence are preserved in separate Markdown files. No normalized specifications have been added; availability and source differences remain explicit.",
+    "extracted_at": "2026-11-11",
+    "reviewed_at": "2026-11-11"
+  },
+  "sections": [
+    {
+      "heading": "Grant manufacturer product fiche — model identification and performance data",
+      "source_text": "Medium temperature (55°C), average climate: Prated 12.2 kW; ηs 143%; Pdh/COPd at -7°C 12.80 kW/2.34; +2°C 7.40 kW/3.61; +7°C 9.10 kW/5.21; +12°C 6.11 kW/8.12; Tbiv -10°C; TOL -10°C; WTOL 60°C; supplementary heater 0 kW; airflow 4464 m³/h; sound power indoor/outdoor 41/61 dBA; annual energy consumption 6598 kWh. DHW: ηwh 99%; load profile L; reference hot-water temperature 49.42°C; daily electricity 4.86 kWh; annual electricity 1033.86 kWh/a; test cylinder 206.8 litres; standby cylinder heat loss 1.76 kWh. Low temperature (35°C), average climate: Prated 12.8 kW; ηs 182%; Pdh/COPd at -7°C 12.0 kW/3.06; +2°C 7.70 kW/4.61; +7°C 9.20 kW/6.75; +12°C 6.20 kW/9.64; Tbiv -10°C; TOL -10°C; WTOL 60°C; supplementary heater 0 kW; airflow 4464 m³/h; sound power indoor/outdoor 41/61 dBA; annual energy consumption 5401 kWh.",
+      "source_url": "https://grant.ie/media/1744/grant-aerona-17kw-hp-fiche-v15-signed.pdf",
+      "source_file": "sources/grant/heat-pump/aerona3-r32/aerona3-hpid17r32-source.md"
+    },
+    {
+      "heading": "Grant current product page — model specification row and range statement",
+      "source_text": "The page's features text says: Two models available in outputs of 6kW & 10kW. The specification table lists four codes: HPID6R32, HPID10R32, HPID13R32 and HPID17R32. HPID17R32 | Grant Aerona³ 17kW R32 Inverter Driven Air Source Heat Pump | A+++ | weight 118 kg | height 1418 mm | width 1024 mm | depth 403 mm | SCOP 35°C 4.54 | capacity 13.6 kW | power input 2.59 kW | maximum running current 25.3 A | refrigerant - | voltage - | flow/return tappings - | operating air temperature -20/43°C | sound power 60.8 dB(A) | sound pressure 49.8 dB(A).",
+      "source_url": "https://grant.ie/professional/products/air-source-heat-pump/grant-aerona-r32-air-source-heat-pump-range-grant-ireland/",
+      "source_file": "sources/grant/heat-pump/aerona3-r32/aerona3-hpid17r32-source.md"
+    },
+    {
+      "heading": "Heat Pump KEYMARK subtype page — model data and performance",
+      "source_text": "Registration 041-K005-04; refrigerant R32; mass 2,800 kg as displayed; certification date 01.03.2022; testing basis KEYMARK Scheme Rules Rev 09; testing laboratory BRE. Model HPID17R32; application Heating + DHW + low temp; units Outdoor; reversibility No; power supply 1x230V 50Hz. EN14511-2 low/medium: heat output 18/15.3 kW; electrical input 3.77/4.86 kW; COP 4.79/3.15. EN12102-1 average-climate outdoor sound power 61.6/61.6 dB(A). EN14825 low/medium: ηs 181/142%; Prated 12.80/12.20 kW; SCOP 4.61/3.64; Tbiv -9/-8°C; TOL -10/-10°C; Pdh at -7°C 12.00/12.80 kW; COP at -7°C 3.06/2.34; Pdh at +2°C 7.70/7.43 kW; COP at +2°C 4.61/3.61; Pdh at +7°C 9.20/9.11 kW; COP at +7°C 6.75/5.21; Pdh at +12°C 6.20/6.10 kW; COP at +12°C 9.64/8.12.",
+      "source_url": "https://www.heatpumpkeymark.com/en/?cHash=600978434450d29d30e42dfa0b4e15d2&tx_pskeymark_frontend%5Baction%5D=showSubtype&tx_pskeymark_frontend%5Bcontroller%5D=Frontend&tx_pskeymark_frontend%5Bsubtype%5D=2590&type=109126",
+      "source_file": "sources/keymark/heat-pump/aerona3-r32/aerona3-hpid17r32-source.md"
+    },
+    {
+      "heading": "Heat Pump KEYMARK certificate — conformity assessment",
+      "source_text": "Certificate holder Grant Engineering Ireland ULC; manufacturing site Shimonoseki City, Japan; product type Air / Water Heat Pump; sub-type and model Aerona³ HPID17R32; testing standards EN 14511:2018, EN 14825:2018 and EN 12102:2017; KEYMARK Certification Scheme for Heat Pumps (2021); registration 041-K005-04; issue date 1 March 2022; no expiry date stated on the one-page PDF.",
+      "source_url": "https://www.heatpumpkeymark.com/uploads/tx_ehpakeymark/Cert_041-K005-04.pdf",
+      "source_file": "sources/keymark/heat-pump/aerona3-r32/aerona3-hpid17r32-source.md"
+    }
+  ],
+  "record_notes": [
+    "Archival-first-pass record; no normalized_specifications have been added.",
+    "The current Grant product page says two Aerona³ models are available (6kW and 10kW), while its specification table also lists HPID13R32 and HPID17R32. Current market availability of HPID17R32 is not established by the page text.",
+    "The current Grant product page lists HPID17R32 capacity 13.6 kW and power input 2.59 kW; the model-specific Grant product fiche lists Prated 12.2 kW at 55°C and 12.8 kW at 35°C, while KEYMARK lists EN14511 heat output 18 kW/15.3 kW and electrical input 3.77 kW/4.86 kW. These are distinct published values/conditions and must not be reconciled by assumption.",
+    "The product page reports SCOP 35°C 4.54; KEYMARK reports SCOP 4.61 low-temperature and 3.64 medium-temperature. These are retained separately and not treated as equivalent.",
+    "The KEYMARK certificate PDF shows issue date 1 March 2022 but no expiry date; current validity must be checked in the live database.",
+    "The KEYMARK database displays refrigerant mass with a decimal comma; the raw string is preserved without numeric conversion.",
+    "The certificate PDF's lack of a displayed expiry date is not proof of expiry or current validity; recheck the live KEYMARK status."
+  ]
+}

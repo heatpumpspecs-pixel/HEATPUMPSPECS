@@ -44,6 +44,10 @@ The V2 standard is applied as established. Repository structure, record format, 
 - Never invent missing specifications, model numbers, source dates or test conditions.
 - Structural validation and factual verification are separate gates.
 
+## Initial Grant source inventory
+
+The first model-level source inventory is [`data/grant/heat-pump/source-inventory.json`](data/grant/heat-pump/source-inventory.json). It indexes all nine Grant Engineering (Ireland) ULC subtypes found in the Heat Pump KEYMARK database, including each subtype URL and certificate PDF URL. It is a source-discovery inventory, not a final product catalogue.
+
 ## Current SEAI research
 
 The first SEAI evidence review is recorded in [docs/research/SEAI-domestic-heat-pump-evidence-review.md](docs/research/SEAI-domestic-heat-pump-evidence-review.md). It identifies the current DTSS v4.0 (July 2026), HARP/DEAP evidence routes and the distinction between SEAI grant eligibility and voluntary Heat Pump KEYMARK certification. This is a source review, not a product record.

@@ -13,8 +13,8 @@
       "R290": 5,
       "R32": 4
     },
-    "models_with_V2_product_record": 1,
-    "models_pending_product_record": 8,
+    "models_with_V2_product_record": 5,
+    "models_pending_product_record": 4,
     "global_database_counts_accessed_at": "2026-11-11",
     "note": "The Keymark database page displayed 13,086 models and 3,244 subtypes at access time. The Grant holder page listed nine subtypes, each showing one model. These counts are snapshots, not fixed totals."
   },
@@ -45,7 +45,7 @@
       "certificate_url": "https://www.heatpumpkeymark.com/uploads/tx_ehpakeymark/Cert_041-K005-08.pdf",
       "source_file": null,
       "number_of_models": 1,
-      "catalogue_status": "source_indexed_pending_product_record"
+      "catalogue_status": "product_record_created_archival_first_pass"
     },
     {
       "family": "Aerona R290",
@@ -70,7 +70,7 @@
       "certificate_url": "https://www.heatpumpkeymark.com/uploads/tx_ehpakeymark/Cert_041-K005-05.pdf",
       "source_file": null,
       "number_of_models": 1,
-      "catalogue_status": "source_indexed_pending_product_record"
+      "catalogue_status": "product_record_created_archival_first_pass"
     },
     {
       "family": "Aerona R290",
@@ -95,7 +95,7 @@
       "certificate_url": "https://www.heatpumpkeymark.com/uploads/tx_ehpakeymark/Cert_041-K005-06.pdf",
       "source_file": null,
       "number_of_models": 1,
-      "catalogue_status": "source_indexed_pending_product_record"
+      "catalogue_status": "product_record_created_archival_first_pass"
     },
     {
       "family": "Aerona R290",
@@ -120,7 +120,7 @@
       "certificate_url": "https://www.heatpumpkeymark.com/uploads/tx_ehpakeymark/Cert_041-K005-07.pdf",
       "source_file": null,
       "number_of_models": 1,
-      "catalogue_status": "source_indexed_pending_product_record"
+      "catalogue_status": "product_record_created_archival_first_pass"
     },
     {
       "family": "Aerona R290",

@@ -20,12 +20,12 @@
     "published_at": null,
     "checked_at": "2026-11-11",
     "verification_status": "partially_verified",
-    "verification_notes": "The official model-specific Grant technical datasheet, current Grant product page, Grant family technical datasheet, matching Heat Pump KEYMARK subtype page and certificate were opened and transcribed. Product identity, registration number and model-specific Ecodesign values were checked across sources. Manufacturer publications disagree on some SCOP, depth and weight values/definitions; these have been preserved separately and no normalized specifications have been created."
+    "verification_notes": "The official model-specific Grant technical datasheet, current Grant product page, Grant family technical datasheet, matching Heat Pump KEYMARK subtype page and certificate were opened and transcribed. Product identity, registration number and model-specific Ecodesign values were checked across sources. Manufacturer publications disagree on some SCOP, depth and weight values/definitions; these have been preserved separately and no normalized specifications have been created. The exact product code also appears in the SEAI Triple E product listing (HPU117632); this is kept distinct from HARP and domestic grant eligibility."
   },
   "extraction": {
     "method": "mixed",
     "normalization_status": "archival_first_pass",
-    "note": "First-pass V2 archival record. Manufacturer and Heat Pump KEYMARK source sections are preserved in Markdown and linked individually below. No normalized specifications have been added; this avoids prematurely defining category-wide field names and preserves unresolved differences between manufacturer publications.",
+    "note": "First-pass V2 archival record. Manufacturer and Heat Pump KEYMARK source sections are preserved in Markdown and linked individually below. No normalized specifications have been added; this avoids prematurely defining category-wide field names and preserves unresolved differences between manufacturer publications. The SEAI Triple E listing is retained as a separate scheme-specific source; it is not treated as HARP or domestic grant approval.",
     "extracted_at": "2026-11-11",
     "reviewed_at": "2026-11-11"
   },
@@ -65,6 +65,18 @@
       "source_text": "Certificate holder Grant Engineering Ireland ULC, Crinkle, Birr, Co. Offaly, R42 D788. Manufacturing site Guangzhou, P.R. China. Product Heat Pumps; product type Outdoor Air to Water Heat Pump; sub-type and models Aerona HPR290i160. Testing basis EN 14511:2022, EN 14825:2022, EN 16147:2017+A1:2022, EN 12102-1:2022 and KEYMARK Certification Scheme for Heat Pumps (2024). Registration number 041-K005-09. Date of issue 14 January 2025. Date of expiry 13 January 2035. The certificate states that it is maintained and held in force through periodic review and verification and directs users to the Heat Pump KEYMARK database for detailed information.",
       "source_url": "https://www.heatpumpkeymark.com/uploads/tx_ehpakeymark/Cert_041-K005-09.pdf",
       "source_file": "sources/keymark/heat-pump/aerona-r290/aerona-hpr290i160-source.md"
+    },
+    {
+      "heading": "SEAI Triple E register — HPU117632 listing",
+      "source_text": "Triple E Code HPU117632; Manufacturer Grant Engineering (ULC) IRL; Product Name Grant R290 16kW; Product Code HPR290i160; Short Description Grant Aerona R290 16kW Heat Pump; Valid From 09/04/2025; Heat Source & Heat Sink Type Air-to-Water; Heat Pump Configuration Packaged; Gas Fired Engine No; Includes VRF No; Cooling (reverse refrigerant flow direction) No; CoP 4.72; EER 0. The listing row does not state test standard, test point, climate zone or measurement conditions for the displayed CoP.",
+      "source_url": "https://triplee.seai.ie/acaproducts/ProductDetails.aspx?search=1&tech=52",
+      "source_file": "sources/seai/heat-pump/aerona-r290/aerona-hpr290i160-source.md"
+    },
+    {
+      "heading": "SEAI Triple E register — scheme context",
+      "source_text": "SEAI describes the Triple E Register as a searchable list of energy-efficient products that meet minimum energy-efficiency criteria and are typically best-in-class. SEAI states that businesses selecting listed equipment can use the Accelerated Capital Allowance (ACA) tax incentive. SEAI separately identifies HARP as the product-efficiency database for home-heating appliances. The Triple E listing is therefore not treated as proof of HARP listing or domestic SEAI heat-pump grant approval.",
+      "source_url": "https://www.seai.ie/plan-your-energy-journey/for-your-business/energy-efficient-products/triple-e-register-for-products",
+      "source_file": "sources/seai/heat-pump/aerona-r290/aerona-hpr290i160-source.md"
     }
   ],
   "record_notes": [
@@ -74,6 +86,7 @@
     "The current Grant product page reports weight 182/210 kg; the family technical-data sheet reports empty/full weight 180/184 kg. These labels are not equivalent definitions and must not be reconciled by assumption.",
     "SCOP values differ across the current Grant product page (4.59 at 35°C), Grant family technical-data sheet (4.50 at 35°C and 3.29 at 55°C) and KEYMARK subtype record (4.63 low temperature and 3.4 medium temperature). Do not normalize these as interchangeable values.",
     "The KEYMARK database displays refrigerant mass as “1,650 kg”; the Grant family technical-data sheet states 1.65 kg. The displayed KEYMARK punctuation is preserved and not independently interpreted.",
-    "The manufacturer datasheet marks “Heat Pump Combination Heater: No” while also listing DHW data on the medium-temperature page. The KEYMARK record lists Heating + DHW + low temp. These statements are preserved separately; their exact system/configuration relationship is not inferred."
+    "The manufacturer datasheet marks “Heat Pump Combination Heater: No” while also listing DHW data on the medium-temperature page. The KEYMARK record lists Heating + DHW + low temp. These statements are preserved separately; their exact system/configuration relationship is not inferred.",
+    "SEAI Triple E lists this exact product code as HPU117632, valid from 09/04/2025, with CoP 4.72. SEAI describes Triple E as a separate energy-efficient-products register associated with the business Accelerated Capital Allowance scheme; SEAI separately describes HARP as the home-heating product-efficiency database. Do not interpret Triple E listing as HARP listing or domestic SEAI grant approval. The Triple E row does not state CoP test conditions."
   ]
 }

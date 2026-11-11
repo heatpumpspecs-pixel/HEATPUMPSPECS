@@ -1,0 +1,78 @@
+{
+  "schema_version": "2.0",
+  "product": {
+    "brand": "Grant",
+    "category": "heat-pump",
+    "family": "Aerona R290",
+    "model": "Grant Aerona HPR290i65",
+    "model_slug": "aerona-hpr290i65",
+    "variant": "6.5 kW R290 outdoor air-to-water heat pump",
+    "model_numbers": [
+      "HPR290i65"
+    ]
+  },
+  "source": {
+    "source_type": "manufacturer",
+    "source_url": "https://grant.ie/media/n3qfdg4j/grant-aerona-hpr290i65-technical-data.pdf",
+    "source_file": "sources/grant/heat-pump/aerona-r290/aerona-hpr290i65-source.md",
+    "source_title": "Technical Data Sheet Concerning the Commission Delegated Regulations (EU) No 811/2013 and (EU) No 813/2013 — Grant Aerona HPR290i65",
+    "publisher": "Grant Engineering (Ireland) ULC",
+    "published_at": null,
+    "checked_at": "2026-11-11",
+    "verification_status": "partially_verified",
+    "verification_notes": "The model-specific Grant Ecodesign technical data PDF, current Grant product-page row, matching Heat Pump KEYMARK subtype page and certificate, and SEAI Triple E listing were opened and transcribed. The main model identity and declared test data were checked across the manufacturer and KEYMARK sources. SCOP figures and Triple E CoP lack equivalent test-condition labels across sources and have not been normalized."
+  },
+  "extraction": {
+    "method": "mixed",
+    "normalization_status": "archival_first_pass",
+    "note": "Archival-first-pass V2 record. Model-specific manufacturer, KEYMARK and SEAI Triple E source sections are preserved in separate Markdown files. No normalized specifications have been added; values with differing definitions or conditions remain separate.",
+    "extracted_at": "2026-11-11",
+    "reviewed_at": "2026-11-11"
+  },
+  "sections": [
+    {
+      "heading": "Grant model-specific Ecodesign technical data — medium and low temperature applications",
+      "source_text": "Medium temperature (55°C), average climate: Prated 6.50 kW; ηs 145%; Pdh/COPd at -7°C 5.98 kW/2.33; +2°C 3.99 kW/3.77; +7°C 2.75 kW/4.74; +12°C 2.41 kW/6.17; Tbiv -8°C; TOL -10°C; WTOL 60°C; supplementary heater 0.790 kW electric; airflow 2650 m³/h; sound power -/52 dBA; annual energy consumption 3633 kWh. Medium-temperature DHW data: ηwh 129.3%; load profile L; reference water temperature 55.53°C; daily electricity 3.83 kWh; annual electricity 791.64 kWh/a; test cylinder 206.8 litres; standby cylinder heat loss 1.40 kWh. Low temperature (35°C), average climate: Prated 6.50 kW; ηs 203%; Pdh/COPd at -7°C 6.33 kW/3.25; +2°C 4.03 kW/5.22; +7°C 2.74 kW/6.85; +12°C 2.24 kW/8.07; Tbiv -9°C; TOL -10°C; WTOL 60°C; supplementary heater 0.48 kW electric; airflow 2650 m³/h; sound power -/51 dBA; annual energy consumption 2603 kWh.",
+      "source_url": "https://grant.ie/media/n3qfdg4j/grant-aerona-hpr290i65-technical-data.pdf",
+      "source_file": "sources/grant/heat-pump/aerona-r290/aerona-hpr290i65-source.md"
+    },
+    {
+      "heading": "Grant manufacturer product page — model specification row",
+      "source_text": "HPR290i65 | Grant Aerona 6.5kW R290 Inverter Driven Air Source Heat Pump | A+++ | weight 117/137 kg | height 854 mm | width 1223 mm | depth 461 mm | SCOP 35°C 5.02 | capacity 7.6 kW | power input 1.54 kW | max running current 25.8 A | R290 | 230 V | 1” BSPF | -25/43°C | sound power 52 dB(A) | sound pressure 40.7 dB(A).",
+      "source_url": "https://grant.ie/professional/products/air-source-heat-pump/grant-aerona-r290-air-source-heat-pump/",
+      "source_file": "sources/grant/heat-pump/aerona-r290/aerona-hpr290i65-source.md"
+    },
+    {
+      "heading": "Heat Pump KEYMARK subtype page — certificate and performance data",
+      "source_text": "Registration 041-K005-06; refrigerant R290; mass of refrigerant 0,830 kg as displayed; certification date 14.01.2025; testing basis KEYMARK Scheme Rules Rev 15; testing laboratory TÜV SÜD Guangzhou. EN14511-2 low/medium temperature: heat output 7.62/7.23 kW, electrical input 1.54/2.40 kW, COP 4.95/3.00. EN12102-1 average-climate outdoor sound power 51/52 dB(A). EN14825: ηs 203/145%, Prated 6.5/6.5 kW, SCOP 5.16/3.70, Tbiv -9/-8°C, TOL -10°C.",
+      "source_url": "https://www.heatpumpkeymark.com/en/?cHash=8ebcde7fe1ffb39d409bc435ae16f53f&tx_pskeymark_frontend%5Baction%5D=showSubtype&tx_pskeymark_frontend%5Bcontroller%5D=Frontend&tx_pskeymark_frontend%5Bsubtype%5D=6084&type=109126",
+      "source_file": "sources/keymark/heat-pump/aerona-r290/aerona-hpr290i65-source.md"
+    },
+    {
+      "heading": "Heat Pump KEYMARK certificate — conformity assessment",
+      "source_text": "Registration 041-K005-06; certificate holder Grant Engineering Ireland ULC; manufacturing site Guangzhou, P.R. China; product type Outdoor Air to Water Heat Pump; sub-type and model Aerona HPR290i65; testing standards EN 14511:2022, EN 14825:2022, EN 16147:2017+A1:2022, EN 12102-1:2022; certificate issue 14 January 2025; expiry 13 January 2035.",
+      "source_url": "https://www.heatpumpkeymark.com/uploads/tx_ehpakeymark/Cert_041-K005-06.pdf",
+      "source_file": "sources/keymark/heat-pump/aerona-r290/aerona-hpr290i65-source.md"
+    },
+    {
+      "heading": "SEAI Triple E register — product listing",
+      "source_text": "Triple E Code HPU117629; Manufacturer Grant Engineering (ULC) IRL; Product Name Grant R290 6.5kW; Product Code HPR290i65; Short Description Grant Aerona R290 6.5kW Heat Pump; Valid From 09/04/2025; Heat Source & Heat Sink Type Air-to-Water; Heat Pump Configuration Packaged; Gas Fired Engine No; Includes VRF No; Cooling (reverse refrigerant flow direction) No; CoP 4.95; EER 0. The listing row does not state the test point or standard for CoP.",
+      "source_url": "https://triplee.seai.ie/acaproducts/ProductDetails.aspx?search=1&tech=52",
+      "source_file": "sources/seai/heat-pump/aerona-r290/aerona-hpr290i65-source.md"
+    },
+    {
+      "heading": "SEAI Triple E scheme context",
+      "source_text": "SEAI distinguishes the Triple E register from HARP. Triple E is a searchable register of energy-efficient products associated with the business Accelerated Capital Allowance (ACA) tax incentive; HARP is the product-efficiency database for home-heating appliances. Triple E listing is not evidence of HARP listing or domestic SEAI heat-pump grant approval.",
+      "source_url": "https://www.seai.ie/plan-your-energy-journey/for-your-business/energy-efficient-products/triple-e-register-for-products",
+      "source_file": "sources/seai/heat-pump/aerona-r290/aerona-hpr290i65-source.md"
+    }
+  ],
+  "record_notes": [
+    "Archival-first-pass record; no normalized_specifications have been added. Category-wide field names and unit conventions remain to be established through the V2 collection process.",
+    "Manufacturer product-page SCOP 35°C is 5.02; KEYMARK lists SCOP 5.16 low-temperature and 3.70 medium-temperature. These are retained separately and not treated as equivalent.",
+    "The Triple E row's CoP 4.95 has no test point or test standard displayed; do not infer the conditions from the matching KEYMARK number.",
+    "The KEYMARK refrigerant mass is retained exactly as displayed using a decimal comma; no conversion is made in this record.",
+    "The Triple E CoP is retained as published without assigning a test point or standard because the listing row does not state those conditions.",
+    "The Triple E register is distinct from HARP and is not proof of domestic SEAI grant approval."
+  ]
+}

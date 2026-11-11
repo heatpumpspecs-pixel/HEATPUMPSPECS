@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "product": {
+    "brand": "Grant",
+    "category": "heat-pump",
+    "family": "Aerona³ R32",
+    "model": "Grant Aerona³ HPID13R32",
+    "model_slug": "aerona3-hpid13r32",
+    "variant": "13 kW R32 outdoor air-to-water heat pump",
+    "model_numbers": [
+      "HPID13R32"
+    ]
+  },
+  "source": {
+    "source_type": "manufacturer",
+    "source_url": "https://grant.ie/media/1906/grant-aerona-r32-installer-irl-doc0017-rev00.pdf",
+    "source_file": "sources/grant/heat-pump/aerona3-r32/aerona3-hpid13r32-source.md",
+    "source_title": "Product fiche concerning the Commission Delegated Regulations (EU) No 811/2013 and (EU) No 813/2013 — Grant Aerona³ HPID13R32",
+    "publisher": "Grant Engineering (Ireland) ULC",
+    "published_at": "2020-05-11",
+    "checked_at": "2026-11-11",
+    "verification_status": "partially_verified",
+    "verification_notes": "The model-specific Grant product fiche, current Grant product-page row, matching Heat Pump KEYMARK subtype page and certificate were opened and transcribed. The exact model identity and declared test data were checked. The current product page says two models are available but its table lists four; the market status of HPID13R32 and HPID17R32 is unresolved. Product-page and test-data values are retained separately where their conditions/definitions differ."
+  },
+  "extraction": {
+    "method": "mixed",
+    "normalization_status": "archival_first_pass",
+    "note": "Archival-first-pass V2 record. Manufacturer and KEYMARK evidence are preserved in separate Markdown files. No normalized specifications have been added; availability and source differences remain explicit.",
+    "extracted_at": "2026-11-11",
+    "reviewed_at": "2026-11-11"
+  },
+  "sections": [
+    {
+      "heading": "Grant manufacturer product fiche — model identification and performance data",
+      "source_text": "Medium temperature (55°C), average climate: Prated 10.0 kW; ηs 149%; Pdh/COPd at -10°C 10.0 kW/2.05; -7°C 9.70 kW/2.16; +2°C 6.10 kW/3.92; +7°C 4.10 kW/5.83; +12°C 4.10 kW/8.62; Tbiv -10°C; TOL -10°C; WTOL 60°C; supplementary heater 0 kW; airflow 4464 m³/h; sound power indoor/outdoor 39/61 dBA; annual energy consumption 5109 kWh. DHW: ηwh 113.4%; load profile L; reference hot-water temperature 49.99°C; daily electricity 4.26 kWh; annual electricity 903 kWh/a; test cylinder 206.8 litres; standby cylinder heat loss 1.76 kWh. Low temperature (35°C), average climate: Prated 10.0 kW; ηs 216%; Pdh/COPd at -10°C 10.0 kW/2.90; -7°C 9.60 kW/3.03; +2°C 6.10 kW/6.20; +7°C 4.30 kW/8.50; +12°C 4.10 kW/10.30; Tbiv -10°C; TOL -10°C; WTOL 60°C; supplementary heater 0 kW; airflow 4464 m³/h; sound power indoor/outdoor 39/61 dBA; annual energy consumption 3439 kWh.",
+      "source_url": "https://grant.ie/media/1906/grant-aerona-r32-installer-irl-doc0017-rev00.pdf",
+      "source_file": "sources/grant/heat-pump/aerona3-r32/aerona3-hpid13r32-source.md"
+    },
+    {
+      "heading": "Grant current product page — model specification row and range statement",
+      "source_text": "The page's features text says: Two models available in outputs of 6kW & 10kW. The specification table lists four codes: HPID6R32, HPID10R32, HPID13R32 and HPID17R32. HPID13R32 | Grant Aerona³ 13kW R32 Inverter Driven Air Source Heat Pump | A+++ | weight 99 kg | height 1418 mm | width 1024 mm | depth 403 mm | SCOP 35°C 5.41 | capacity 13.6 kW | power input 2.59 kW | maximum running current 23.0 A | refrigerant 2.20 (column label in extracted row appears misaligned) | voltage 230V | flow/return tappings 1 1/4” BSPF | operating temperature/sound columns are malformed in the extracted page row: “-20/43°C°C | -20/43dB(a)dB(a) | 49.8dB(a)”. Preserve raw row; do not infer the malformed values.",
+      "source_url": "https://grant.ie/professional/products/air-source-heat-pump/grant-aerona-r32-air-source-heat-pump-range-grant-ireland/",
+      "source_file": "sources/grant/heat-pump/aerona3-r32/aerona3-hpid13r32-source.md"
+    },
+    {
+      "heading": "Heat Pump KEYMARK subtype page — model data and performance",
+      "source_text": "Registration 041-K005-03; refrigerant R32; mass 2,200 kg as displayed; certification date 01.03.2022; testing basis KEYMARK Scheme Rules Rev 09; testing laboratory BRE. Model HPID13R32; application Heating + DHW + low temp; units Outdoor; reversibility No; power supply 1x230V 50Hz. EN14511-2 low/medium: heat output 13.6/11.4 kW; electrical input 2.59/3.53 kW; COP 5.25/3.23. EN12102-1 average-climate outdoor sound power 60.8/60.8 dB(A). EN14825 low/medium: ηs 215/160%; Prated 10.00/10.00 kW; SCOP 5.46/4.08; Tbiv -8/-8°C; TOL -10/-10°C; Pdh at -7°C 9.60/9.68 kW; COP at -7°C 3.03/2.16; Pdh at +2°C 6.09/6.05 kW; COP at +2°C 6.20/3.92; Pdh at +7°C 4.30/4.14 kW; COP at +7°C 8.50/8.62; Pdh at +12°C 4.10/4.11 kW; COP at +12°C 10.30/8.62.",
+      "source_url": "https://www.heatpumpkeymark.com/en/?cHash=9c92c1410c3e48e5532db316f41c73fb&tx_pskeymark_frontend%5Baction%5D=showSubtype&tx_pskeymark_frontend%5Bcontroller%5D=Frontend&tx_pskeymark_frontend%5Bsubtype%5D=2589&type=109126",
+      "source_file": "sources/keymark/heat-pump/aerona3-r32/aerona3-hpid13r32-source.md"
+    },
+    {
+      "heading": "Heat Pump KEYMARK certificate — conformity assessment",
+      "source_text": "Certificate holder Grant Engineering Ireland ULC; manufacturing site Shimonoseki City, Japan; product type Air / Water Heat Pump; sub-type and model Aerona³ HPID13R32; testing standards EN 14511:2018, EN 14825:2018 and EN 12102:2017; KEYMARK Certification Scheme for Heat Pumps (2021); registration 041-K005-03; issue date 1 March 2022; no expiry date stated on the one-page PDF.",
+      "source_url": "https://www.heatpumpkeymark.com/uploads/tx_ehpakeymark/Cert_041-K005-03.pdf",
+      "source_file": "sources/keymark/heat-pump/aerona3-r32/aerona3-hpid13r32-source.md"
+    }
+  ],
+  "record_notes": [
+    "Archival-first-pass record; no normalized_specifications have been added.",
+    "The current Grant product page says two Aerona³ models are available (6kW and 10kW), while its specification table also lists HPID13R32 and HPID17R32. Current market availability of HPID13R32 is not established by the page text.",
+    "The product page's extracted HPID13R32 row contains malformed/ambiguous cells in the refrigerant, operating-temperature and sound columns. The raw row is preserved; those fields are not normalized.",
+    "The product page reports SCOP 35°C 5.41; KEYMARK reports SCOP 5.46 low-temperature and 4.08 medium-temperature. These are retained separately and not treated as equivalent.",
+    "The KEYMARK certificate PDF shows issue date 1 March 2022 but no expiry date; current validity must be checked in the live database.",
+    "The KEYMARK database displays refrigerant mass with a decimal comma; the raw string is preserved without numeric conversion.",
+    "The certificate PDF's lack of a displayed expiry date is not proof of expiry or current validity; recheck the live KEYMARK status."
+  ]
+}

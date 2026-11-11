@@ -1,0 +1,59 @@
+{
+  "catalogue_version": "1.0",
+  "title": "HEATPUMPSPECS Machine-Readable Product Catalogue",
+  "description": "Machine-readable index of domestic heat-pump product records following the TechSpecs Canonical Data Standard v2.0. Source evidence and verification status are exposed for each record.",
+  "purpose": "machine_reading",
+  "canonical_host": "https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main",
+  "record_count": 1,
+  "records": [
+    {
+      "record_id": "grant/heat-pump/aerona-hpr290i160",
+      "path": "grant/heat-pump/aerona-hpr290i160.json",
+      "record_url": "https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main/data/grant/heat-pump/aerona-hpr290i160.json",
+      "schema_version": "2.0",
+      "brand": "Grant",
+      "category": "heat-pump",
+      "family": "Aerona R290",
+      "model": "Grant Aerona HPR290i160",
+      "model_slug": "aerona-hpr290i160",
+      "model_year": null,
+      "variant": "16 kW R290 outdoor air-to-water heat pump",
+      "source": {
+        "source_type": "manufacturer",
+        "publisher": "Grant Engineering (Ireland) ULC",
+        "source_url": "https://grant.ie/media/bkijqoid/grant-aerona-hpr290i160-technical-data.pdf",
+        "source_file": "sources/grant/heat-pump/aerona-r290/aerona-hpr290i160-source.md",
+        "source_file_url": "https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main/sources/grant/heat-pump/aerona-r290/aerona-hpr290i160-source.md",
+        "verification_status": "partially_verified",
+        "checked_at": "2026-11-11"
+      },
+      "section_sources": [
+        {
+          "source_url": "https://grant.ie/media/bkijqoid/grant-aerona-hpr290i160-technical-data.pdf",
+          "source_file": "sources/grant/heat-pump/aerona-r290/aerona-hpr290i160-source.md",
+          "source_file_url": "https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main/sources/grant/heat-pump/aerona-r290/aerona-hpr290i160-source.md"
+        },
+        {
+          "source_url": "https://grant.ie/professional/products/air-source-heat-pump/grant-aerona-r290-air-source-heat-pump/",
+          "source_file": "sources/grant/heat-pump/aerona-r290/aerona-hpr290i160-source.md",
+          "source_file_url": "https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main/sources/grant/heat-pump/aerona-r290/aerona-hpr290i160-source.md"
+        },
+        {
+          "source_url": "https://grant.ie/media/2414/irlpdoc0023_rev0000_r290-data-sheet_a4-1.pdf",
+          "source_file": "sources/grant/heat-pump/aerona-r290/aerona-hpr290i160-source.md",
+          "source_file_url": "https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main/sources/grant/heat-pump/aerona-r290/aerona-hpr290i160-source.md"
+        },
+        {
+          "source_url": "https://www.heatpumpkeymark.com/en/?cHash=13647e61956ffbc63174683e75ca36e4&tx_pskeymark_frontend%5Baction%5D=showSubtype&tx_pskeymark_frontend%5Bcontroller%5D=Frontend&tx_pskeymark_frontend%5Bsubtype%5D=6087&type=109126",
+          "source_file": "sources/keymark/heat-pump/aerona-r290/aerona-hpr290i160-source.md",
+          "source_file_url": "https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main/sources/keymark/heat-pump/aerona-r290/aerona-hpr290i160-source.md"
+        },
+        {
+          "source_url": "https://www.heatpumpkeymark.com/uploads/tx_ehpakeymark/Cert_041-K005-09.pdf",
+          "source_file": "sources/keymark/heat-pump/aerona-r290/aerona-hpr290i160-source.md",
+          "source_file_url": "https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main/sources/keymark/heat-pump/aerona-r290/aerona-hpr290i160-source.md"
+        }
+      ]
+    }
+  ]
+}

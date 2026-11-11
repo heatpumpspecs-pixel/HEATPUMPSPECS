@@ -72,6 +72,6 @@ python scripts/audit_source_archives.py
 
 The V2 schema is checked even before the first product record exists. The validator reports an empty product collection as an initial state, not as a fabricated successful product-record validation.
 
-## Publishing
+## Machine discovery and publishing
 
-No public data-host URL or catalogue endpoint is declared here until the HEATPUMPSPECS publishing destination and routing are configured. GitHub remains the canonical repository.
+The repository publishes an interim machine-readable catalogue at [`data/catalogue.json`](data/catalogue.json) and discovery instructions at [`llms.txt`](llms.txt). The catalogue currently uses the public GitHub raw-content endpoint, so product records and source transcriptions can be retrieved directly without a separate website. The catalogue generator accepts `HEATPUMPSPECS_BASE_URL` so a future Cloudflare Pages/custom-domain host can be configured without changing product records. GitHub remains the canonical repository; no custom publishing host is claimed to be live.

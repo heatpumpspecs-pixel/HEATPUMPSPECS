@@ -19,6 +19,7 @@ HEATPUMPSPECS is the canonical product-data repository. Product records follow t
 
 - [Grant manufacturer source transcription](https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main/sources/grant/heat-pump/aerona-r290/aerona-hpr290i160-source.md)
 - [Heat Pump KEYMARK source transcription](https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main/sources/keymark/heat-pump/aerona-r290/aerona-hpr290i160-source.md)
+- [SEAI Triple E source transcription](https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main/sources/seai/heat-pump/aerona-r290/aerona-hpr290i160-source.md)
 - [SEAI domestic heat-pump evidence review](https://raw.githubusercontent.com/heatpumpspecs-pixel/HEATPUMPSPECS/main/docs/research/SEAI-domestic-heat-pump-evidence-review.md)
 
 ## Interpretation rules

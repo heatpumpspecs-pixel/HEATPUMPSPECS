@@ -24,6 +24,16 @@ python -m pip install requests beautifulsoup4
 
 ## Run
 
+### Use a saved sitemap file
+
+If SEAI's sitemap has already been saved locally, place the XML file in the repository root (beside `README.md`). Then run:
+
+```bash
+python scripts/crawl_seai_website.py --sitemap-file sitemap.xml --max-pages 10 --delay 2
+```
+
+The local sitemap is parsed before capture attempts. Its URL entries and source-declared `lastmod` values are retained in `url-inventory.json`, including URLs that are pending, blocked by `robots.txt`, or fail to download. The crawler still checks the live `robots.txt` file and does not bypass access restrictions.
+
 Start a small test batch first:
 
 ```bash
@@ -57,7 +67,7 @@ All crawler output is written under `sources/seai/site-crawl/`:
 - `pages/` — original HTML, text extraction, blocks JSON and provenance sidecars.
 - `documents/` — optional linked document downloads and sidecars.
 - `state.json` — crawl queue, visited URLs, successes and failures.
-- `url-inventory.json` — current crawl inventory and completion counts.
+- `url-inventory.json` — URL-level inventory, sitemap `lastmod` values when supplied, capture statuses and completion counts.
 
 A page is marked `url_and_content_archived_not_fact_checked`. This describes capture only; it is not a factual verification status.
 

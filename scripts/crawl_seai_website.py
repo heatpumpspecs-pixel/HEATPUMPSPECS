@@ -114,7 +114,25 @@ def sitemap_candidates(session: requests.Session, base: str, robots_text: str) -
     return result
 
 
-def parse_sitemap(session: requests.Session, sitemap_url: str, seen: set[str], depth: int = 0) -> list[str]:
+def parse_sitemap_content(xml_data: bytes, source: str) -> list[dict]:
+    """Parse a sitemap URL set, retaining each URL's source-declared lastmod."""
+    root = ET.fromstring(xml_data)
+    ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+    if root.tag.endswith("sitemapindex"):
+        raise ValueError(
+            f"{source} is a sitemap index. Supply the individual sitemap files locally."
+        )
+    entries = []
+    for item in root.findall("sm:url", ns):
+        loc = item.findtext("sm:loc", default="", namespaces=ns).strip()
+        if not loc or not in_scope(loc):
+            continue
+        lastmod = item.findtext("sm:lastmod", default="", namespaces=ns).strip() or None
+        entries.append({"url": canonical_url(loc), "lastmod": lastmod, "sitemap_source": source})
+    return entries
+
+
+def parse_sitemap(session: requests.Session, sitemap_url: str, seen: set[str], depth: int = 0) -> list[dict]:
     if depth > 5 or sitemap_url in seen:
         return []
     seen.add(sitemap_url)
@@ -126,16 +144,27 @@ def parse_sitemap(session: requests.Session, sitemap_url: str, seen: set[str], d
         logging.warning("Sitemap unavailable %s: %s", sitemap_url, exc)
         return []
     ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
-    found = []
-    for loc in root.findall(".//sm:loc", ns):
-        u = (loc.text or "").strip()
-        if not u:
-            continue
-        if u.lower().endswith(".xml") or "sitemap" in u.lower():
-            found.extend(parse_sitemap(session, u, seen, depth + 1))
-        elif in_scope(u):
-            found.append(canonical_url(u))
-    return found
+    if root.tag.endswith("sitemapindex"):
+        found = []
+        for loc in root.findall(".//sm:sitemap/sm:loc", ns):
+            child = (loc.text or "").strip()
+            if child:
+                found.extend(parse_sitemap(session, child, seen, depth + 1))
+        return found
+    try:
+        return parse_sitemap_content(r.content, sitemap_url)
+    except (ET.ParseError, ValueError) as exc:
+        logging.warning("Could not parse sitemap %s: %s", sitemap_url, exc)
+        return []
+
+
+def merge_sitemap_entries(entries: list[dict]) -> list[dict]:
+    merged = {}
+    for entry in entries:
+        url = entry["url"]
+        if url not in merged or (not merged[url].get("lastmod") and entry.get("lastmod")):
+            merged[url] = entry
+    return [merged[url] for url in sorted(merged)]
 
 
 def extract_page(soup: BeautifulSoup) -> tuple[str, str, list[dict], list[str]]:
@@ -189,6 +218,7 @@ def main() -> int:
     parser.add_argument("--delay", type=float, default=1.5, help="Seconds between requests")
     parser.add_argument("--timeout", type=int, default=45)
     parser.add_argument("--resume", action="store_true", help="Resume from existing state.json")
+    parser.add_argument("--sitemap-file", type=Path, help="Read a previously saved SEAI urlset sitemap XML file instead of downloading a sitemap")
     parser.add_argument("--include-documents", action="store_true", help="Download linked office/PDF documents")
     args = parser.parse_args()
 
@@ -201,8 +231,9 @@ def main() -> int:
     (args.out / "documents").mkdir(exist_ok=True)
     state_path = args.out / "state.json"
     state = load_state(state_path) if args.resume else {
-        "queue": [start], "queued": [start], "visited": [], "failed": [], "captured": []
+        "queue": [start], "queued": [start], "visited": [], "failed": [], "captured": [], "sitemap_entries": []
     }
+    state.setdefault("sitemap_entries", [])
     session = build_session()
     robots_url = urljoin(start, "/robots.txt")
     robots_response = session.get(robots_url, timeout=args.timeout)
@@ -212,18 +243,27 @@ def main() -> int:
     rp.set_url(robots_url)
     rp.parse(robots_text.splitlines())
 
-    # Sitemap inventory is added before crawling, but only URLs permitted by robots are queued.
-    sitemap_urls = []
-    for sm in sitemap_candidates(session, start, robots_text):
-        sitemap_urls.extend(parse_sitemap(session, sm, set()))
+    # Build the full discovery inventory before attempting page capture.
+    sitemap_entries = []
+    if args.sitemap_file:
+        try:
+            sitemap_entries = parse_sitemap_content(args.sitemap_file.read_bytes(), str(args.sitemap_file))
+        except (OSError, ET.ParseError, ValueError) as exc:
+            parser.error(f"Could not read local sitemap: {exc}")
+    else:
+        for sm in sitemap_candidates(session, start, robots_text):
+            sitemap_entries.extend(parse_sitemap(session, sm, set()))
+    sitemap_entries = merge_sitemap_entries(sitemap_entries)
+    state["sitemap_entries"] = sitemap_entries
+    sitemap_urls = [entry["url"] for entry in sitemap_entries]
     for u in sitemap_urls:
-        if u not in state["queued"] and rp.can_fetch(USER_AGENT, u):
+        if u not in state["queued"] and u not in state["visited"]:
             state["queue"].append(u)
             state["queued"].append(u)
-    state["sitemaps_discovered"] = len(set(sitemap_urls))
+    state["sitemaps_discovered"] = len(sitemap_entries)
     save_state(state_path, state)
 
-    # Export the discovery inventory separately from the content captures.
+    # Export the complete discovery inventory, including URLs not yet captured.
     inventory_path = args.out / "url-inventory.json"
     while state["queue"]:
         if args.max_pages and len(state["visited"]) >= args.max_pages:
@@ -303,6 +343,24 @@ def main() -> int:
             save_state(state_path, state)
             time.sleep(args.delay)
 
+    captured_by_url = {item["url"]: item for item in state["captured"]}
+    failures_by_url = {item["url"]: item for item in state["failed"]}
+    visited_set = set(state["visited"])
+    sitemap_by_url = {item["url"]: item for item in state.get("sitemap_entries", [])}
+    all_urls = sorted(set(state["queued"]) | set(sitemap_by_url))
+    url_records = []
+    for url in all_urls:
+        record = {"url": url, "lastmod": sitemap_by_url.get(url, {}).get("lastmod")}
+        if url in captured_by_url:
+            record.update({"status": "captured", "page_title": captured_by_url[url].get("title"), "archive_path": captured_by_url[url].get("archive_path"), "sha256": captured_by_url[url].get("sha256")})
+        elif url in failures_by_url:
+            record.update({"status": failures_by_url[url].get("status"), "failure": failures_by_url[url]})
+        elif url in visited_set:
+            record["status"] = "visited_without_page_capture"
+        else:
+            record["status"] = "pending"
+        url_records.append(record)
+
     inventory = {
         "site": "https://www.seai.ie/",
         "generated_at": utc_now(),
@@ -312,9 +370,10 @@ def main() -> int:
         "captured_pages": len(state["captured"]),
         "failed_or_excluded": len(state["failed"]),
         "remaining_queue": len(state["queue"]),
+        "urls": url_records,
         "pages": state["captured"],
         "failures": state["failed"],
-        "scope_note": "Only public URLs on seai.ie/www.seai.ie are crawled. robots.txt is respected. This inventory is not a claim that every website resource is accessible or captured."
+        "scope_note": "URL records preserve sitemap lastmod where supplied. Capture status describes this crawler's attempts only. Only public URLs on seai.ie/www.seai.ie are in scope; robots.txt is respected. A listed URL is not proof that its content was accessible, captured, or fact-checked."
     }
     inventory_path.write_text(json.dumps(inventory, ensure_ascii=False, indent=2), encoding="utf-8")
     save_state(state_path, state)

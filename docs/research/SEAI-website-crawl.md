@@ -49,7 +49,7 @@ python scripts/crawl_seai_website.py --delay 2
 Resume an interrupted run:
 
 ```bash
-python scripts/crawl_seai_website.py --resume --delay 2
+python scripts/crawl_seai_website.py --sitemap-file sitemap.xml --resume --delay 2
 ```
 
 Include linked PDFs and office documents:
@@ -58,7 +58,7 @@ Include linked PDFs and office documents:
 python scripts/crawl_seai_website.py --resume --include-documents --delay 2
 ```
 
-Use `--max-pages N` to constrain each run. The same crawl state can be resumed later with `--resume`.
+Use `--max-pages N` to constrain each run. When using a local sitemap, keep `--sitemap-file sitemap.xml` in each resumed command so the complete sitemap inventory and its `lastmod` values remain attached to the crawl state.
 
 ## Output
 
